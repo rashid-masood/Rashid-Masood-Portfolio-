@@ -352,6 +352,7 @@ section {
 .skillslr{
   display: flex;
   justify-content: space-between;
+    
 }
 
 /*Timeline*/
@@ -535,10 +536,12 @@ section {
 
 .contact-content-con {
   display: flex;
+  flex-direction: column;
+  /* display: flex; */
   padding-top: 3.5rem;
-  margin-left: 30rem;
+  /* margin-left: 30rem;
   width: 50%;
-  /* background: red; */
+  background: red; */
 }
 .contact-content-con .left-contact {
   flex: 2;
@@ -1028,4 +1031,22 @@ section {
 }
 .list ul li:hover:before {
   transform: scaleX(1);
+}
+
+
+/* @media only screen and (min-width: 600px) {
+  
+  .skillslr{
+    display: flex;
+    color: blue;
+  }
+  
+} */
+
+@media only screen and (max-width: 600px) {
+  .skillslr{
+    display: flex;
+  flex-direction: column;
+
+  }
 }
